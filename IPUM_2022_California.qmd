@@ -1,7 +1,7 @@
 ---
-title: "IPUM_200_California"
+title: "IPUM 200 California"
 author: 
-  - W4 Reflection Group 100 
+  - W5 Reflection Group 100 
 thanks: "A GitHub Repository containing all data, R code, and other files used in this investigation is located here: <https://github.com/jeno0403/Relflection_Exercise_4_USA_Census>" 
 date: today
 date-format: long
@@ -43,7 +43,7 @@ ipums_extract <-
   to_factor()
 ```
 
-Making use of the codebook, how many respondents were there in each state (STATEICP) that had a doctoral degree as their highest educational attainment (EDUC)? (Hint: Make this a column in a tibble.)
+Our first question of interest is "how many respondents were there in each state (STATEICP) that had a doctoral degree as their highest educational attainment (EDUC)?"
 
 
 ```{r}
@@ -79,11 +79,11 @@ doctoral_counts_table
 
 ```
 
-# Instructions on how to obtain the data.
+# Obtaining the Data From IPUMS.
 
 To obtain the data from IPUMS USA, we started by selecting "IPUMS USA" on the IPUMS website, then clicked "Get Data" and selected "2022 ACS" under "SELECT SAMPLE." We specified state-level data by selecting "HOUSEHOLD" \> "GEOGRAPHIC" and added "STATEICP" to our cart by clicking the plus. We went to "PERSON" and added "EDUC" to our cart for individual-level data. We clicked "VIEW CART" and then "CREATE DATA EXTRACT." We changed the "DATA FORMAT" to ".dta." Finally, we want to include a descriptive name for our extract, for instance, “2024-10-03: State, education”, which specifies the date we made the extract and what is in the extract. After that, we can click “SUBMIT EXTRACT”. After logging in or creating an account, we received an email when the extract was ready. We then downloaded and saved it locally (e.g., "usa_00004.dta") for use in `R`.
 
-# A brief overview of the ratio estimators approach.
+# Overview of the Ratio Estimators Approach.
 
 The ratio estimator approach is a statistical method used to estimate an unknown population total or average by leveraging the relationship between two correlated variables. It is particularly useful in surveys and studies where one variable is easier to measure than the target variable. By utilizing the proportion between these two variables, the ratio estimator allows us to extend estimates to the entire population.
 
@@ -96,7 +96,7 @@ Detailed Steps in the Ratio Estimator Approach:
 2. After calculating the ratio for California, we assume that this ratio is representative of the same relationship in other states. This ratio is then used to estimate the total number of respondents in each state by applying it to the number of respondents with doctoral degrees in those states. The formula is as follows: $\hat{N}_{state}=\frac{Respondents with Doctoral Degrees in State}{R}$
 
 
-# The estimates and the actual number of respondents.
+# Comparison fo Estimates and the Actual Number of Respondents.
 
 ```{r}
 #| label: tbl-comparison
@@ -152,7 +152,7 @@ comparison_table
 
 ```
 
-# Some explanation of why they are different.
+# Explanation of The Reasons of the Differces.
 
 The estimated total number of respondents in each state using the ratio estimators approach may differ from the actual number of respondents for several reasons:
 
