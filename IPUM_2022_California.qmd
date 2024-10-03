@@ -2,7 +2,7 @@
 title: "IPUM_200_California"
 author: 
   - W4 Reflection Group100 
-thanks: "A GitHub Repository containing all data, R code, and other files used in this investigation is located here: <https://github.com/jeno0403/IPUMS_2022->" 
+thanks: "A GitHub Repository containing all data, R code, and other files used in this investigation is located here: <https://github.com/jeno0403/Relflection_Exercise_4_USA_Census>" 
 date: today
 date-format: long
 toc: true
