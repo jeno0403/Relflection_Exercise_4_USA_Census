@@ -8,7 +8,6 @@ The repo is structured as:
 -   An R project `USDocAnalysis.Rproj` is used.
 -   `IPUM_2022_California.qmd` is the quarto document used to generate pdf document.
 -   `reference.bib` is used to generate the citation.
--   The project is a collaborative work by Amy Jin,Yiyue Deng and Jinyan Wei.
 
 ## Data
 Data should not be uploaded due to IPUMS requirements. The paper provides instructions on how to obtain the data.
