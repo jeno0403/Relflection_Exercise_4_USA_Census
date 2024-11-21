@@ -1,4 +1,4 @@
-# Reflection Exercise 4 USA Census
+# Ratio Estimator Analysis for 2022 ACS Data
 ## Overview
 This project uses the ratio estimators approach of Laplace to estimate the total number of respondents in each state by using the ratio between the number of respondents with doctoral degrees in California and the number of respondents in California.
 This project contains data from IPUMS(not included for confidential reasons) to analyze respondents and educational levels. The project contains limited information about the data itself and only analysis of the result. The result will be generated in the form of a pdf produced by Quarto. 
