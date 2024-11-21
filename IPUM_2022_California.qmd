@@ -1,10 +1,12 @@
 ---
-title: "California's Education Attainment Census Data Analysis"
+title: "Estimating Respondent's doctoral degree with California's Education Attainment Census"
+subtitle: "Ratio Estimation Method: Effective for State Population Estimates, Yet Varies Significantly Across States"
 author: 
   - Jinyan Wei
   - Amy Jin
 thanks: "A GitHub Repository containing all data, R code, and other files used in this investigation is located here: <https://github.com/jeno0403/US-Census-Education-Data-Analysis>" 
 date: today
+abstract: "This study analyzes data obtained from IPUMS using R and associated packages. The primary goal was to determine the number of respondents in each state who reported a doctoral degree as their highest level of educational attainment. Utilizing the ratio estimation approach, the analysis extrapolates state-level estimates based on the ratio of doctoral degree holders in California to its total respondents. Results reveal significant discrepancies between estimated and actual counts due to variability in state-level factors influencing education, highlighting limitations in the homogeneity assumptions of ratio estimators."
 date-format: long
 format: pdf
 number-sections: true
